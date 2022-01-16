@@ -21,7 +21,9 @@ app.get("",(req,res)=>{
 });
 //declaration du port
 let PORT = 3000;
-//
+
+require("./app/routes/joueur.routes.js")(app);
+
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
 });
